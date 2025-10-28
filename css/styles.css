@@ -585,8 +585,8 @@ section {
 
 }
 
-.footer_form .modal-form-input {
-        border: 1px solid #fff;
+.footer_form .footer-form-input {
+        border: 1px solid #ffffff;
         border-radius: 4px;
         width: 264px;
         height: 40px;
@@ -597,7 +597,7 @@ section {
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.modal-form-input::placeholder {
+.footer-form-input::placeholder {
                 font-size: 12px;
                 line-height: 2;
                 letter-spacing: 0.04em;
@@ -701,11 +701,11 @@ pointer-events: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%
+        border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);;
         background-color: #e7e9fc;
         color: #2e2f42;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         stroke-width: 1px;
         stroke: rgba(0, 0, 0, 0.1);
         padding: 0;
@@ -716,12 +716,15 @@ pointer-events: none;
 .modal_button:focus {
         fill: #FFFFFF;
         background-color: #404bbf;
+        border: none;
+        
 }
 
 
 
 .modal_button_icon {
         stroke: currentColor;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_caption {
@@ -737,7 +740,7 @@ pointer-events: none;
 .modal_form {}
 
 .modal-form-field {
-        margin-bottom: 16px;
+        margin-bottom: 8px;
 }
 
 .modal-form-label {
@@ -764,6 +767,7 @@ pointer-events: none;
         border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: #ffffff;
+        background-color: transparent;
         outline: transparent;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding-left: 38px;
@@ -793,6 +797,7 @@ pointer-events: none;
 }
 
 .modal-form-comments {
+        resize: none;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -854,7 +859,6 @@ pointer-events: none;
         border: 1px solid rgba(46, 47, 66, 0.4);
 
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: border-color, background-color;
         cursor: pointer;
 }
 
@@ -864,7 +868,6 @@ pointer-events: none;
 
 input[type='checkbox']:checked + .agreement-wrapper > .agreement-checkbox {
         background-color: #404bbf;
-        border-radius: 2px;
         border: none
         fill: #F4F4FD;
 }
