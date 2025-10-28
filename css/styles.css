@@ -750,6 +750,10 @@ pointer-events: none;
         margin-bottom: 8px;
 }
 
+.modal-form-field-textarea {
+        margin-bottom: 16px;
+}
+
 .modal-form-label {
         display: block;
         margin-bottom: 4px;
